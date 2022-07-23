@@ -4,34 +4,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Página de Login</title>
+
+	<title>Painel de login</title>
+	
 	<!-- Meta Tags -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<!-- Estilo CSS -->
+	<link href="css/estilo.css" type="text/css" rel="stylesheet">
 	<!-- Bootstrap -->
+	
 	<link
 		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
 		rel="stylesheet"
 		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
 		crossorigin="anonymous">
+	
 
 </head>
 <body>
 	<form class="row g-3 position-absolute top-50 start-50 translate-middle needs-validation" novalidate action="ServletLogin" method="post">
 			
-		<h3>Seja bem-vindo!</h3>	
+		<h2>Seja bem-vindo!</h2>	
 		
 		<input type="hidden" value="<%=request.getParameter("url")%> name="url">
-		<div class="col">
-			<label>*Login:</label>
+		<div class="mb-3">
+			<label>*Login</label>
 			<input class="form-control" type="text" name="login" placeholder="Login" required> 
 			<div class="invalid-feedback">
 				Campo obrigatório!
 			</div>
 		</div>
-		<div class="col-md-6">
-			<label>*Password:</label>
+		<div class="mb-3">
+			<label>*Password</label>
 			<input class="form-control" type="password" name="senha" placeholder="Password" required> 
 			<div class="invalid-feedback">
 				Campo obrigatório!

@@ -7,7 +7,7 @@
                               <div class="main-menu-header">
                                   <img class="img-80 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
                                   <div class="user-details">
-                                      <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
+                                      <span id="more-details"><%= session.getAttribute("usuario") %><i class="fa fa-caret-down"></i></span>
                                   </div>
                               </div>
         
@@ -16,7 +16,7 @@
                                       <li class="more-details">
                                           <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
                                           <a href="#!"><i class="ti-settings"></i>Settings</a>
-                                          <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a>
+                                          <a href="ServletLogin?acao=logout"><i class="ti-layout-sidebar-left"></i>Logout</a>
                                       </li>
                                   </ul>
                               </div>

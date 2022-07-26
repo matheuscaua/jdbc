@@ -32,11 +32,46 @@
                             <div class="main-body">
                                 <div class="page-wrapper">
                                     <!-- Page-body start -->
+                                    
                                     <div class="page-body">
                                         <div class="row">
-                                     		<h1>
-                                     			Cadastro dos usuários
-                                     		</h1>
+                                        	<div class="col-md">
+	                                        	<div class="card">
+	                                        		<div class="card-header">
+			                                     		<h5>
+			                                     			Cadastro de usuários
+			                                     		</h5>
+		                                     		</div>
+		                                     		<div class="card-block">
+			                                     		<form class="form-material">
+			                                     			<div class="form-group form-default">
+			                                     				<input type="text" class="form-control">
+			                                     				<span class="form-bar"></span>
+			                                     				<label class="float-label">ID</label>
+			                                     			</div>
+			                                     			<div class="form-group form-default">
+			                                     				<input type="text" class="form-control">
+			                                     				<span class="form-bar"></span>
+			                                     				<label class="float-label">Nome</label>
+			                                     			</div>
+			                                     			<div class="form-group form-default">
+			                                     				<input type="email" class="form-control">
+			                                     				<span class="form-bar"></span>
+			                                     				<label class="float-label">Email</label>
+			                                     			</div>
+			                                     			<div class="form-group form-default">
+			                                     				<input type="password" class="form-control">
+			                                     				<span class="form-bar"></span>
+			                                     				<label class="float-label">Senha</label>
+			                                     			</div>
+			                                     			<div class="form-group form-default">
+			                                     				<input type="submit" class="btn btn-primary" value="Cadastrar">
+			                                     			</div>
+			                                     			
+			                                     		</form>
+		                                     		</div>
+	                                        	</div>
+                                        	</div>
                                         </div>
                                     </div>
                                     <!-- Page-body end -->

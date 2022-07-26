@@ -23,7 +23,7 @@
 
 </head>
 <body>
-	<form class="row g-3 position-absolute top-50 start-50 translate-middle needs-validation" novalidate action="ServletLogin" method="post">
+	<form class="row g-3 position-absolute top-50 start-50 translate-middle needs-validation" novalidate action="<%= request.getContextPath() %>/ServletLogin" method="post">
 			
 		<h2>Seja bem-vindo!</h2>	
 		

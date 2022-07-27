@@ -43,29 +43,36 @@
 			                                     		</h5>
 		                                     		</div>
 		                                     		<div class="card-block">
-			                                     		<form class="form-material">
+			                                     		<form class="form-material" action="<%= request.getContextPath()%>/ServletUsuarioController" method="post">
 			                                     			<div class="form-group form-default">
-			                                     				<input type="text" class="form-control">
+			                                     				<input type="text" class="form-control" name="id" id="id">
 			                                     				<span class="form-bar"></span>
 			                                     				<label class="float-label">ID</label>
 			                                     			</div>
 			                                     			<div class="form-group form-default">
-			                                     				<input type="text" class="form-control">
+			                                     				<input type="text" class="form-control" name="nome" id="nome" >
 			                                     				<span class="form-bar"></span>
 			                                     				<label class="float-label">Nome</label>
 			                                     			</div>
 			                                     			<div class="form-group form-default">
-			                                     				<input type="email" class="form-control">
+			                                     				<input type="email" class="form-control" name="email" id="email" required autocomplete="off" >
 			                                     				<span class="form-bar"></span>
 			                                     				<label class="float-label">Email</label>
 			                                     			</div>
 			                                     			<div class="form-group form-default">
-			                                     				<input type="password" class="form-control">
+			                                     				<input type="text" class="form-control" name="login" id="login" required autocomplete="off">
+			                                     				<span class="form-bar"></span>
+			                                     				<label class="float-label">Login</label>
+			                                     			</div>
+			                                     			<div class="form-group form-default">
+			                                     				<input type="password" class="form-control" name="senha" id="senha" required autocomplete="off">
 			                                     				<span class="form-bar"></span>
 			                                     				<label class="float-label">Senha</label>
 			                                     			</div>
 			                                     			<div class="form-group form-default">
-			                                     				<input type="submit" class="btn btn-primary" value="Cadastrar">
+			                                     				<input type="submit" class="btn btn-primary" value="Novo">
+			                                     				<input type="submit" class="btn btn-primary" value="Salvar">
+			                                     				<input type="submit" class="btn btn-danger" value="Excluir">
 			                                     			</div>
 			                                     			
 			                                     		</form>
